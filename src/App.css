@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* position: relative; */
+}
+
+.container {
+  width: 1182px;
+  height: 522px;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+}
+.image-box img {
+  width: 649px;
+  height: 522px;
+}
+.game-name {
+  width: 528px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.game-name h1 {
+  font-size: 96px;
+  line-height: 144px;
+  font-weight: 700;
+}
+.btn{
+  width: 220px;
+  height: 44px;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(1);
+  transition:all 200ms ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1);
+  
+}
+.btn1{
+  background-color: black;
+  color:white;
+}
+.btn1:hover{
+  background-color: white;
+  color:black;
+}
+.btn2{
+  background-color: white;
+  color:black;
+}
+.btn2:hover{
+  background-color: black;
+  color:white;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.scoreNumber{
+  width: 1280px;
+  height: 151px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#playerScore{
+  width: 135px;
+  height: 151px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#playerScore h1{
+  font-size: 100px;
+  font-weight: 500;
+  width: 62px;
+  height: 112px;
+
+}
+.selectNumber{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.selectNumber p{
+  color: rgba(255, 12, 12, 1);
+
+
+}
+.numbers{
+  display: flex;
+  gap:24px;
+  
+  
+}
+.number{
+  width: 72px;
+  height: 72px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.selectedNumber{
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap:15px;
+}
+.classContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  gap:5px;
+}
+.dice img{
+  width: 250px;
+  height: 250px;
+}
+.rules{
+  width:794px;
+  height: 180px;
+  padding: 20px;
+  gap:24px;
+  border-radius: 5px;
+  background-color: rgba(251, 241, 241, 1);
+}
+.rules h1{
+  width: 280px;
+  height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.rules div{
+  width: 754px;
+  height: 108px;
+  gap: 4px;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .container{
+      flex-direction: column;
+      height: auto;
+      width: auto;
+      align-items: center;
+  }
+}
